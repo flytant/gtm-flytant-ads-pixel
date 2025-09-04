@@ -169,9 +169,8 @@ sendPixel(finalUrl, function() {
   logToConsole('Flytant Ads Pixel - Event sent successfully');
   data.gtmOnSuccess();
 }, function() {
-  // Failure callback - This will happen in test mode due to CORS
-  logToConsole('Flytant Ads Pixel - Note: sendPixel failed in test environment (normal behavior)');
-  logToConsole('Flytant Ads Pixel - URL constructed correctly: ' + finalUrl);
-  // Still call success since URL is built correctly
-  data.gtmOnSuccess();
+  // Failure callback
+  logToConsole('Flytant Ads Pixel - Pixel request failed');
+  logToConsole('Flytant Ads Pixel - URL attempted: ' + finalUrl);
+  data.gtmOnFailure();
 });
