@@ -1,5 +1,5 @@
 homepage: "https://github.com/flytant/gtm-flytant-ads-pixel"
 documentation: "https://github.com/flytant/gtm-flytant-ads-pixel#readme"
 versions:
-  - sha: "main"
+  - sha: "46145116f70de9878739976f22167d8a3097cc23"
     changeNotes: "Initial release v1.0.0 - Custom event tracking for Flytant Ads platform with flexible parameter support"
